@@ -1,63 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcolatrice  </title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
-
-
-
 <body>
 
-<div class="container">
+<div class="colore_calc">
 
-    <form action="">
-          
-   <input type="text" id="screen" class="screen" value="" readonly="readonly">
+    <div class="schermo" id="display">
+        <input type="text" id="display" readonly="readonly" class="schermo" style="border: 0px">
+    </div>
+
     
-     <div class="keyCalc">
-        <input type="button" class="number" value="7" onclick="showNum(this.value)">
-        <input type="button" class="number" value="8" onclick="showNum(this.value)">
-        <input type="button" class="number" value="9" onclick="showNum(this.value)">
-        <input type="button" class="operation" value="x" onclick="getOper(this.value)">
-     </div>
 
-     <div class="keyCalc">
-        <input type="button" class="number" value="4" onclick="showNum(this.value)">
-        <input type="button" class="number" value="5" onclick="showNum(this.value)">
-        <input type="button" class="number" value="6" onclick="showNum(this.value)">
-        <input type="button" class="operation" value="-" onclick="getOper(this.value)">
-     </div>
-
-     <div class="keyCalc">
-        <input type="button" class="number" value="1" onclick="showNum(this.value)">
-        <input type="button" class="number" value="2" onclick="showNum(this.value)">
-        <input type="button" class="number" value="3" onclick="showNum(this.value)">
-        <input type="button" class="operation" value="+" onclick="getOper(this.value)">
-     </div>
-
-     <div class="keyCalc">
-        <input type="button" class="number" value="0" onclick="showNum(this.value)">
-        <input type="button" class="operation" value="." onclick="showNum(this.value)">
-        <input type="button" class="operation" value="AC" onclick="clearScreen()">
-        <input type="button" class="operation" value="=" onclick="calculate(this.value)">
-        <input type="button" class="operation" value="/" onclick="getOper(this.value)">
-     </div>
 
 
 </div>
 
-</form>
+
+
 
 <script src="script.js"></script>
-    
 </body>
-
-
-
-
 </html>
